@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "commute-app",
+    "name": "Commute Check",
     "slug": "commute-app",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "assetBundlePatterns": [
       "**/*"
@@ -13,13 +14,20 @@
       "bundleIdentifier": "com.dstle.commuteapp"
     },
     "android": {
-      "package": "com.dstle.commuteapp"
+      "package": "com.dstle.commuteapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
     },
     "web": {},
     "extra": {
       "eas": {
         "projectId": "02bcde17-ea92-4deb-85ae-38dbc9a74ea4"
       }
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
