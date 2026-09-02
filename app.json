@@ -5,14 +5,21 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.dstle.commuteapp"
     },
     "android": {
-      "package": "com.dslte.commuteapp"
+      "package": "com.dstle.commuteapp"
     },
-    "web": {}
+    "web": {},
+    "extra": {
+      "eas": {
+        "projectId": "02bcde17-ea92-4deb-85ae-38dbc9a74ea4"
+      }
+    }
   }
 }
