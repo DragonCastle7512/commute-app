@@ -41,10 +41,7 @@ export default function CalendarScreen({ navigation }) {
   );
 
   const handleDayPress = (day) => {
-    const dateKey = day.dateString;
-    if (records[dateKey] && records[dateKey].length > 0) {
-      navigation.navigate('DayDetail', { dateKey });
-    }
+      navigation.navigate('DayDetail', { dateKey: day.dateString });
   };
 
   const todayKey = toDateKey(new Date());
@@ -62,7 +59,6 @@ export default function CalendarScreen({ navigation }) {
       <TouchableOpacity
         style={styles.dayWrap}
         onPress={() => handleDayPress(date)}
-        disabled={!hasRecord}
         activeOpacity={hasRecord ? 0.6 : 1}
       >
         <View style={[styles.dayNumberWrap, isToday && styles.dayNumberWrapToday]}>
